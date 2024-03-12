@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10배경스타일2</title>
+    <style>
+        /* 
+            backgorund-image:url (내부/외부 경로);
+            - 웹페이지의 배경이미지를 지정하거나, 아이콘을 보여줄 때 사용
+        */
+        .bg{
+            width: 888px;
+            height: 888px;
+            background-image: url(https://file.daesoon.org/webzine/307/202212191656_Daesoon_263_%EB%AC%B8%ED%99%94%EC%82%B0%EC%B1%85_%EC%A0%84%EA%B2%BD%20%EC%86%8D%20%EB%8F%99%EB%AC%BC%20%EA%B3%A0%EC%96%91.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        /* 
+            background-size
+            - contain: 요소에 맞춰 크기 지정
+            - cover: 여백없이 완전히 크기를 지정 -> 웹페이지 크기에 따라 이미지 크기 변경
+        */
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .icon{
+            /* width: 125px;
+            height: 125px; */
+            /* background-image: url('./img/sp_main.ae81c9d5.png');
+            background-repeat: no-repeat;
+            background-position: -111px -130px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="icon"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 글꼴 스타일 : font-size, font-weight, font-style, font-family */
+        /* 단위: px(고정), %(반응형 0~100), em(부모요소의 글꼴크기), rem(브라우저의 글꼴크기)
+            ex> 1em -> 16px(기본값)
+                2em -> 32px
+                3em -> 48px
+                1.5em, 1.5em ...
+
+                1rem -> 16px(기본값)
+                2rem -> 32
+                
+                [넓이, 높이를 지정할 때 사용]
+                '%'단위의 전제조건 ->부모요소의 넓이 혹은 높이 값
+        */
+        p{
+            font-size: 16px;
+            font-weight: 700;
+            font-style: italic;
+            font-family: '궁서';
+        }
+
+        span{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <p>글꼴 스타일 적용해보기</p>
+
+    <span>em 단위 적용해보기</span>
+</body>
+</html>

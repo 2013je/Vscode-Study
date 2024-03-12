@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex09박스모델_패딩</title>
+    <style>
+        /* HTML요소 크기를 지정할 때 테두리, 여백 값 등을 계산해야함 */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+            padding: 20px; /* 20px만큼 추가해서 여백 만듬*/
+        }
+        .second{
+            /* 
+                box-sizing: 테두리, 여백 지정하더라도 기존 크기 유지
+                content-box(기본값): padding, border를 그대로 유지 -> HTML요소 크기 늘어남
+                border-box: padding, border값을 지정한 크기에 포함 -> HTML요소의 크기 유지
+            */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+    <div class="box second">box</div>
+</body>
+</html>

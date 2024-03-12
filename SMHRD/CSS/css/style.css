@@ -1,0 +1,14 @@
+/* 자손 선택자 */
+dl span{color: red;}
+dl li{color: green;}
+
+/* 자식 선택자 */
+ol > span{ color: purple;}
+
+/* 근접후행 선택자 */
+/* li + li{color: blue;} */
+#two + li { color: blue;}
+
+/* 후행 선택자 */
+/* li ~ li{ color: orange;} */
+#two ~ li{ color: orange; }

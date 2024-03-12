@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11포지션</title>
+    <style>
+        body{
+            height: 1500px;
+        }
+        .parent{
+            width: 200px;
+            height: 600px;
+            background-color: whitesmoke;
+            margin: 0 auto;
+
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            text-align: center ;
+            line-height: 200px; /* 틀의 크기를 넣어줘야함*/
+            color: white;
+            font-weight: bold;
+
+        }
+        .r{
+           background-color: rgb(235, 84, 84); 
+           /* 현재 위치를 고정
+              스크롤을 움직이더라도 HTML요소를 따라다님 ex)top버튼
+           */
+           position: fixed;
+            }
+        .y{
+            background-color: rgb(255, 222, 75);
+         }
+        .b{
+            background-color: rgb(130, 170, 255)
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child r">child</div>
+        <div class="child y">child</div>
+        <div class="child b">child</div>
+    </div>
+</body>
+</html>

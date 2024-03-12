@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11포지션</title>
+    <style>
+        .parent{
+            width: 200px;
+            height: 600px;
+            background-color: whitesmoke;
+            margin: 0 auto;
+            /* absolute는 부모요소에 position속성이 있다면, 부모요소 내에서 위치이동 */
+            /* position: relative; */
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            text-align: center ;
+            line-height: 200px; /* 틀의 크기를 넣어줘야함*/
+            color: white;
+            font-weight: bold;
+
+            /* HTML문서의 body태그를 기준으로 위치이동 */
+            position: absolute;
+            
+        }
+        .r{
+           background-color: rgb(235, 84, 84); 
+           top: 0px;
+           left: 0px;
+            }
+        .y{
+            background-color: rgb(255, 222, 75);
+            right: 0px;
+            bottom: 0;
+         }
+        .b{
+            background-color: rgb(130, 170, 255)
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child r">child</div>
+        <div class="child y">child</div>
+        <div class="child b">child</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* display : inline, bolck, inline-block, none(★★★)
+            - inline : 컨텐츠만큼 크기 차지, 크기지정X
+                        ex) a, strong, span
+            - block : 웹 페이지의 가로 전체 크기를 차지, 크기지정O+ 여백적용O
+                        ex) h1~h6, p, div, table, ul
+            - inline-block: 컨텐츠만큼 크기 차지, 크기지정O+ 여백적용O
+                        ex) img, button, input, ...
+            - none : 숨김
+        */
+        h1{
+            display: inline;
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            padding: 50px;
+        }
+        a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            padding: 50px;
+        }
+        button{
+            display: none;
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- display 속성값이 block인 태그 -->
+    <h1>display속성 실습</h1>
+
+    <!-- display 속성값이 inline인 태그 -->
+    <a href="#">inline 속성인 태그</a>
+    <a href="#">inline 속성인 태그</a>
+
+    <!-- display 속성값이 inline-block인 태그 -->
+    <button>클릭</button>
+
+</body>
+</html>

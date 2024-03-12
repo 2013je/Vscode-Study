@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 입력양식을 표현하는 태그 : form, input, select, textarea -->
+
+    <form action="데이터를 전송할 서버경로" method="데이터 전송박식(GET/POST)">
+        <input type="text" name="식별자" placeholder="미리보기 텍스트" value="내용 입력">
+        <br>
+        <input type="password" name="ps" placeholder="비밀번호를 입력하세요">
+        <br>
+
+        <!-- label 
+            for : input 태그의 id 속성값을 지정하면 label태그의 내용을 클릭했을 때
+             지정된 input 태그가 활성화되는 기능(포커스) -->
+        <label for="name">이름:</label>
+        <input type="text" name="" id="name">
+            
+        혈액형 : <input type="text">
+        <detalists>id = "blood"
+            <option >A</option>
+            <option >B</option>
+            <option >O</option>
+            <option >AB</option>
+        </detalists>
+        <br>
+        <!-- radio 타입은 name속성을 동일하게 작성해야 그룹으로 묶인다 
+            + value 속성에 반드시 지정해줘야 한다.-->
+
+        <input type="radio" name="gender" id=""value="남">남
+        <input type="radio" name="gender" id=""value="여">여
+        <br>
+
+        <input type="checkbox" name="category" value="인공지능">인공지능
+        <input type="checkbox" name="category" value="빅데이터">빅데이터
+        <input type="checkbox" name="category" value="웹개발">웹개발
+        <input type="checkbox" name="category" value="앱개발">앱개발
+        <br>
+
+        <input type="file" name="upload" >
+        <br>
+
+        <input type="color" name="color">
+        <br>
+
+        <input type="number" name="number" min="0" max="5">
+        <br>
+
+        <input type="range" name="" id="">
+        <br>
+
+        <input type="date" name="date">
+        <br>
+
+        <!-- 목록상자를 표현하는 태그 
+            option 태그에 value 속성은 서버에 전달할 값을 정의하는 속성
+            생략할 경우  option 태그에 정의된 값이 그대로 서버에 전달
+        -->
+        <select name="emil" >
+            <option value="">메일선택</option>
+            <option value="naver">naver.com</option>
+            <option>google.com</option>
+        </select>
+        <br>
+
+        <!-- 입력 양식을 그룹화할 때 사용하는 태그 : fieldset, legend -->
+        <fieldset>
+            <legend>하고 싶은말</legend>
+            <!-- 많은 양의 텍스트를 작성할 수 있는 공간 -->
+            <textarea name="" id="" cols="30" rows="10" style="resize: none;"></textarea>
+            
+        </fieldset>
+        <input type="reset" value="초기화">
+        <input type="submit" value="전송">
+
+
+
+    </form>
+</body>
+</html>

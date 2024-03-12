@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex09박스모델_마진</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0;
+        }
+        .box{
+            width: 200pc;
+            height: 200px;
+            border: 1px solid;
+            margin: 20px;
+            }
+            /* 
+                두개의 HTML요소에 margin값이 동일할 경우 마진겹침현상 발생 
+                레이아웃 배치할 때 위 현상을 고려해 둘중 하나는 margin값을 더 크게 부여해야함
+
+            */
+        .first{ margin-bottom: 40px;}
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+
+            /* 모든 방향에 20px 적용 */
+            /* margin: 20px */
+
+            /* 위아래, 좌우 각각 적용 */
+            /* margin: 20px 40px; */
+
+            /* 위, 좌우, 아래 */
+            /* margin: 20px 40px 20px; */
+
+            /* 위, 우, 아래, 좌*/
+            margin: 20px 40px 20px 40px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+            margin: 0 auto; /* block level element에 한해서 가운데 정렬(수평방향)*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box first">Box</div>
+    <div class="box second">Box</div>
+    <hr>
+    <div class="box2">Box</div>
+    <hr>
+    <div class="box3">Box</div>
+</body>
+</html>

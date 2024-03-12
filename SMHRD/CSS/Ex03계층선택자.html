@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 외부 스타일시트 적용 -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 내부 스타일 시트 적용 -->
+    <!-- <style>
+        /* 자손 선택자 */
+        dl span{color: red;}
+        dl li{color: green;}
+
+        /* 자식 선택자 */
+        ol > span{ color: purple;}
+
+        /* 근접후행 선택자 */
+        /* li + li{color: blue;} */
+        #two + li { color: blue;}
+
+        /* 후행 선택자 */
+        /* li ~ li{ color: orange;} */
+        #two ~ li{ color: orange; }
+    </style> -->
+</head>
+<body>
+    <dl>
+        <dt>연수생 수칙</dt>
+        <dd>
+            <ol >
+                <li id="two">지각하지 않기</li>
+                <!-- 인라인 스타일 시트 적용 -->
+                <li style="color: brown;">결석하지 않기</li>
+                <span>(불가피할 땐 꼭 담당연구원에게 미리 말하기)</span>
+                <li>복습하기</li>
+            </ol>
+        </dd>
+    </dl>
+</body>
+</html>
